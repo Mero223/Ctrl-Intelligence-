@@ -27,11 +27,6 @@ def meditate():  # put application's code here
 def nature():  # put application's code here
     return render_template("nature.html")
 
-@app.route("/read")
-def read():  # put application's code here
-    our_story = select_story()
-    return render_template("read.html", story=our_story)
-
 @app.route("/create")
 def create():  # put application's code here
     return render_template("create.html")
@@ -40,30 +35,10 @@ def create():  # put application's code here
 def cook():  # put application's code here
     return render_template("cook.html")
 
-@app.route("/random")
-def random_choice():  # put application's code here
-    return render_template("random.html")
-
-@app.route("/meditate")
-def meditate():  # put application's code here
-    return render_template("meditate.html")
-
-@app.route("/nature")
-def nature():  # put application's code here
-    return render_template("nature.html")
-
 @app.route("/read")
 def read():  # put application's code here
     our_story = select_story()
     return render_template("read.html", story=our_story)
-
-@app.route("/create")
-def create():  # put application's code here
-    return render_template("create.html")
-
-@app.route("/cook")
-def cook():  # put application's code here
-    return render_template("cook.html")
 
 @app.route("/random")
 def random_choice():  # put application's code here
