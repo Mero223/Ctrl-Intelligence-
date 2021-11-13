@@ -1,8 +1,8 @@
-""" Unit tests for app.py
+""" Unit tests for the functions imported into app.py
 
 to run enter "pytest test_app.py" in termina;"""
 
-from app import select_story
+from select_story import select_story
 
 story = ["story 1","story 2","story 3","story 4","story 5"]
 
