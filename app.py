@@ -34,8 +34,8 @@ def cook():  # put application's code here
 
 @app.route("/read")
 def read():  # put application's code here
-    our_story = select_story()
-    return render_template("read.html", story=our_story)
+    selected_story_title, selected_story = select_story()
+    return render_template("read.html", title=selected_story_title, story=selected_story)
 
 @app.route("/random")
 def random_choice():  # put application's code here
