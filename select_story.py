@@ -121,7 +121,30 @@ Several people lined up to try their luck.
 
 "How did it get in there?" Isabella whispered to Michael.
 
-Before she could wonder any longer, she heard a big splash. A soaking wet raccoon dashed between her and Michael, holding Mr. Murphy's leftover candied apple in its mouth."""
+Before she could wonder any longer, she heard a big splash. A soaking wet raccoon dashed between her and Michael, holding Mr. Murphy's leftover candied apple in its mouth.""",
+
+"The moving Star by Rahmot Afolabi":
+"""Oh, Ye Ah!
+Moving gradually through the clouded sky
+Winking joy in my heart
+Very small but significant
+Among many other stars
+Millions of stars beautify the sky at night
+But thou are different
+You appear once and disappear into the cloud
+Ye appear again in different positions
+Your uniqueness is an omen of peace
+Thousands of stars remain sparkling 
+But you choose to be daring and glaring
+Your bravery left me in wonders
+Thy scintillation lulls me to comfort
+Verily, you lack no oomph
+Curiosity overflows my mind
+Are you moving forward to become the biggest star or even the Moon!
+This mystery, I can't still unravel.
+You are indeed a twinkle moving star
+Remain the moving star you are!"""
+
 
 }
 
