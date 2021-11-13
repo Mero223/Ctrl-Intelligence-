@@ -1,13 +1,7 @@
-from flask import Flask, render_template, url_for
-from random import choice, seed
+from flask import Flask, render_template
+from select_story import select_story
 
 app = Flask(__name__)
-
-def select_story():
-    seed()
-    story_list = ["story 1","story 2","story 3","story 4","story 5"]
-    selected_story = choice(story_list)
-    return selected_story
 
 
 @app.route("/")
