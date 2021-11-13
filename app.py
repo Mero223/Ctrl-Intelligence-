@@ -7,5 +7,29 @@ app = Flask(__name__)
 def home():  # put application's code here
     return render_template("example_template.html")
 
+@app.route("/meditate")
+def meditate():  # put application's code here
+    return render_template("meditate.html")
+
+@app.route("/nature")
+def nature():  # put application's code here
+    return render_template("nature.html")
+
+@app.route("/read")
+def read():  # put application's code here
+    return render_template("read.html")
+
+@app.route("/create")
+def create():  # put application's code here
+    return render_template("create.html")
+
+@app.route("/cook")
+def cook():  # put application's code here
+    return render_template("cook.html")
+
+@app.route("/random")
+def random():  # put application's code here
+    return render_template("random.html")
+
 if __name__ == '__main__':
     app.run()
