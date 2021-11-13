@@ -1,9 +1,195 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<div class="home">
-<h1>Home page</h1>
-<h1>Ctrl Intelligence team project</h1>
-<p>This is the team project</p>
-</div>
+<!--<div class="home">-->
+<!--<h1>Home page</h1>-->
+<!--<h1>Ctrl Intelligence team project</h1>-->
+<!--<p>This is the team project</p>-->
+<!--</div>-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="meditate" content="Disconnect and Reconnect with ReVidalize">
+
+	<title>Home | ReVidalize</title>
+<style type="text/css">
+	body {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+	}
+/*NAV BAR*/
+	*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+	nav{
+	    display: flex;
+	    justify-content: space-around;
+	    align-content: center;
+	    min-height: 8vh;
+	    background-color: bisque;
+	    font-family: 'Oswald', sans-serif;
+	}
+	.logo{
+	    color: chocolate;
+	    text-transform: uppercase;
+	    letter-spacing: 5px;
+	    font-size: 30px;
+	}
+	.nav-links{
+	    display: flex;
+	    justify-content: space-around;
+	    width: 100%;
+
+	}
+
+	.nav-links li{
+	    list-style: none;
+	}
+
+	.nav-links a{
+	    color: chocolate;
+	    text-decoration: none;
+	    letter-spacing: 5px;
+	    font-weight: bold;
+	    font-size: 20px;
+	}
+
+	#navBar {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+/*BOTTOM CONTAINER*/
+	#logo {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 50%;
+	}
+
+	#welcomeMessage {
+		font-size: 50px;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+/*BUTTONS*/
+	.homeButtons {
+		background-color:
+		padding: 20px;
+		border-radius: 10px;
+		width: 25%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 40px;
+		font-size: 40px;
+		border: none;
+	}
+
+	#buttonContainer {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+	}
+
+	#meditateButton {
+		background-color: #C6E3F6;
+	}
+
+	#createButton {
+		background-color: #A1E4B1;
+	}
+
+	#cookButton {
+		background-color: #FAE1FF;
+	}
+
+	#natureButton {
+		background-color: #C6E3F6;
+	}
+
+	#readButton {
+		background-color: #A1E4B1;
+	}
+
+	#randomButton {
+		background-color: #FAE1FF;
+	}
+
+
+</style>
+
+</head>
+	<body>
+		<!-- NAV BAR -->
+		<nav>
+			<div id="navBar">
+	            <h1 class="logo">GET READY TO REVIDALIZE</h1>
+	            <strong>
+	                <nauv>
+	                    <u1 class="nav-links">
+	                        <li><a href="{{ url_for('home')}}">Home</a></li>
+	                        <li><a href="{{ url_for('about')}}">About</a></li>
+	                        <li><a href="{{ url_for('contact')}}">Contact</a></li>
+
+	                    </u1>
+	                </nauv>
+	            </strong>
+	        </div>
+	    </nav>
+	    <!-- END OF NAV BAR -->
+
+	    <div id="container">
+
+			<img id="logo" src="/Users/joannapark/Ctrl-Intelligence-/static/images/logo.png" alt="revitalize logo">
+
+			<h1 id="welcomeMessage">How would you like to ReVidalize today?</h1>
+
+			<div id="buttonContainer">
+				<div id="rowOne">
+					<a href="meditate.html">
+						<button class="homeButtons" id="meditateButton"> Meditate
+							<img src="static/images/meditate.png" alt="An icon of a person meditating" class="titleImage">
+						</button>
+					</a>
+					<a href="cook.html">
+						<button class="homeButtons" id="cookButton"> Cook
+							<img src="static/images/cook.png" alt="An icon of a person meditating" class="titleImage">
+						</button>
+					</a>
+					<a href="read.html">
+						<button class="homeButtons" id="readButton"> Read
+							<img src="static/images/book.png" alt="An icon of a book" class="titleImage">
+						</button>
+					</a>
+				</div> <!-- end of #rowOne -->
+				<div id="rowTwo">
+					<a href="create.html">
+						<button class="homeButtons" id="createButton"> Create
+							<img src="static/images/art.png" alt="An icon of a paint pallete and brush" class="titleImage">
+						</button>
+					</a>
+					<a href="nature.html">
+						<button class="homeButtons" id="natureButton"> Nature
+							<img src="static/images/meditate.png" alt="An icon of a leaf" class="titleImage">
+						</button>
+					</a>
+					<a href="random.html">
+						<button class="homeButtons" id="randomButton"> Random
+							<img src="static/images/star.png" alt="An icon of a star" class="titleImage">
+						</button>
+					</a>
+				</div>
+		</div>
+
+
+	</body>
+</html>
+
 {% endblock %}
