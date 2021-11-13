@@ -10,10 +10,7 @@ body{
 /* Title */
 .heading_title{
     display:inline;
-<<<<<<< HEAD
     margin-bottom: 30px;
-=======
->>>>>>> 8fe97be6b3d260b1d28678126c0c43bd64625c41
 }
 
 #title_image{
@@ -35,7 +32,6 @@ body{
     display: flex;
     justify-content: center;
 }
-<<<<<<< HEAD
 
 
 /* nav bar */
@@ -76,5 +72,3 @@ nav{
     font-weight: bold;
     font-size: 20px;
 }
-=======
->>>>>>> 8fe97be6b3d260b1d28678126c0c43bd64625c41
