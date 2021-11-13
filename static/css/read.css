@@ -10,6 +10,7 @@ body{
 /* Title */
 .heading_title{
     display:inline;
+    margin-top: 20px;
 }
 
 #title_image{
@@ -28,10 +29,18 @@ body{
 #background_box{
     background-color: #FAE1FF;
     width: 90vw;
-    height: 70vh;
+    margin-bottom: 30px;
+    margin-top: 30px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
+}
+
+/* story box */
+#story_text{
+    font-size: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 /* nav bar */
