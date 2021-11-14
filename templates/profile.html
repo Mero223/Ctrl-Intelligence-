@@ -4,187 +4,38 @@
     <meta charset="UTF-8">
     <title>Profile | ReVidalize</title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-
-    <style>
-        *{
-        margin:0px;
-        padding: 0px;
-        box-sizing: border-box;
-        }
-
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-content: center;
-            min-height: 8vh;
-            background-color: bisque;
-            font-family: 'Oswald', sans-serif;
-        }
-        .logo{
-            color: chocolate;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 30px;
-        }
-        .nav-links{
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-
-        }
-
-        .nav-links li{
-            list-style: none;
-        }
-
-        .nav-links a{
-            color: chocolate;
-            text-decoration: none;
-            letter-spacing: 5px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        #navBar {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        #logo {
-            width: 500px;
-            padding-top: 30px;
-            }
-        body {
-            text-align: center;
-            font-family: 'Oswald', sans-serif;
-        }
-
-		#container {
-			padding-top: 20px;
-			padding-bottom: 50px;
-			margin-left: auto;
-			margin-right; auto;
-		}
-
-        #profilepic {
-        	width: 300px;
-        	border-radius: 50%;
-        	float:left;
-        	margin-left: 150px;
-        	margin-top: 40px;
-        	}
-        #profile {
-        	float:left;
-        }
-
-        #summary {
-        	float:left;
-        	margin-left: 100px;
-        	font-size: 30px;
-        }
-
-        .following {
-        	float: left;
-        	margin-left: 100px;
-        	margin-top:40px;
-        	font-size: 30px;
-        	margin-right: 50px;
-        	font-size: 20px;
-        	text-align: justify;
-        	background-color: #FAE1FF;
-        	padding: 10px;
-        	border-radius: 10px;
-        }
-         .sumbuttons {
+	<link rel="stylesheet" href="static/css/profile.css">
 
 
-        	}
-
-        .buttons {
-        	margin-bottom: 10px;
-        	border-radius: 10px;
-        	padding:10px;
-        	color: black;
-        }
-
-        #meditateButton {
-		background-color: #A1E4B1;
-		}
-
-		#meditateButton:hover {
-			background-color: #71B882;
-		}
-
-		#createButton {
-			background-color: #A1E4B1;
-		}
-
-		#createButton:hover {
-			background-color: #71B882;
-		}
-
-		#cookButton {
-			background-color: #FAE1FF;
-		}
-
-		#cookButton:hover {
-			background-color: #E3A9EF;
-		}
-
-		#natureButton {
-			background-color: #C6E3F6;
-		}
-
-		#natureButton:hover {
-			background-color: #8DBDDD;
-		}
-
-		#readButton {
-			background-color: #C6E3F6;
-		}
-
-		#readButton:hover {
-			background-color: #8DBDDD;
-		}
-
-      	a {
-        	text-decoration: none;
-        }
-
-
-
-
-        .clearfloat {
-        	clear: both;
-        }
-
-        p {
-        	margin-left:180px;
-        	font-size: 60px;
-        	text-align: left;
-        	}
-    </style>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="static/images/favicon_io/site.webmanifest">
+        
 </head>
 <body>
-    <header>
-				<img id="logo" src="../../static/images/logo.png" alt="revidalize logo">
-		</header>
-		<nav>
-			<div id="navBar">
-	            <a class="logo">GET READY TO REVIDALIZE</a>
-	            <strong>
-	                <nauv>
-	                    <u1 class="nav-links">
-						<li ><a class="menuButton" href="home.html">Home</a></li>
-                        <li ><a class="menuButton" href="about.html">About</a></li>
-                        <li ><a class="menuButton" href="contact.html">Contact</a></li>
-						<li ><a class="menuButton" href="profile.html">Profile</a></li>
+	<!-- nav bar -->
+	<nav>
+		<div id="navBar">
+			<a class="logo">GET READY TO REVIDALIZE</a>
+			<strong>
+				<nauv>
+					<u1 class="nav-links">
+						<li><a href="{{ url_for('home')}}">Home</a></li>
+						<li><a href="{{ url_for('about')}}">About</a></li>
+						<li><a href="{{ url_for('contact')}}">Contact</a></li>
+						<li ><a href="{{ url_for('profile')}}">Profile</a></li>
 
-	                    </u1>
-	                </nauv>
-	            </strong>
-	        </div>
-	    </nav>
-	    <!-- END OF NAV BAR -->
+					</u1>
+				</nauv>
+			</strong>
+		</div>
+	</nav>
+	<!-- END OF NAV BAR -->
+	<header>
+		<img id="logo" src="../../static/images/logo.png" alt="revidalize logo">
+	</header>
 	<div id="container">
 		<div id="profile">
 			<img id="profilepic" src="../static/images/profile.png">
@@ -195,27 +46,27 @@
 			<div class="buttons" >
 				<strong>This week's summary:</strong>
 			</div>
-			<a href="meditate.html">
+			<a href="{{ url_for('meditate')}}">
 				<div class="buttons" id="meditateButton">
 						Meditating: 2.4 hr
 				</div>
 			</a>
-			<a href="cook.html">
+			<a href="{{ url_for('cook')}}">
 				<div class="buttons" id="cookButton">
 					Cooking: 6.7 hr
 				</div>
 			</a>
-			<a href="read.html" >
+			<a href="{{ url_for('read')}}" >
 				<div class="buttons" id="readButton">
 					Reading: 4.3 hr
 				</div>
 			</a>
-			<a href="create.html">
+			<a href="{{ url_for('create')}}">
 				<div class="buttons" id="createButton">
 					Creating: 1.2 hr
 				</div>
 			</a>
-			<a href="nature.html">
+			<a href="{{ url_for('nature')}}">
 				<div class="buttons" id="natureButton">
 					Exploring nature: 3.4 hr
 				</div>
@@ -227,15 +78,15 @@
 
 		<div class="following">
 			For you:
-			<div class="sumbuttons">
+			<div>
 				Invitations: 2
 			</div>
 
-			<div class="sumbuttons">
+			<div>
 				Pending invites: 3
 			</div>
 
-			<div class="sumbuttons">
+			<div>
 				Saved lists: 4
 			</div>
 		</div>

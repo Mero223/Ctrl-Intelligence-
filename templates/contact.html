@@ -1,5 +1,5 @@
-{% extends "layout.html" %}
-{% block content %}
+<!-- {% extends "layout.html" %}
+{% block content %} -->
 
 
 <!DOCTYPE html>
@@ -9,144 +9,18 @@
 
 	<title>Contact Us | ReVidalize </title>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+	<link rel="stylesheet" href="static/css/contact.css">
 
-	<style type="text/css">
-		/*NAV BAR*/
-	*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-	}
-
-	nav{
-	    display: flex;
-	    justify-content: space-around;
-	    align-content: center;
-	    min-height: 8vh;
-	    background-color: bisque;
-	    font-family: 'Oswald', sans-serif;
-	}
-	.logo{
-	    color: chocolate;
-	    text-transform: uppercase;
-	    letter-spacing: 5px;
-	    font-size: 30px;
-	}
-	.nav-links{
-	    display: flex;
-	    justify-content: space-around;
-	    width: 100%;
-
-	}
-
-	.nav-links li{
-	    list-style: none;
-	}
-
-	.nav-links a{
-	    color: chocolate;
-	    text-decoration: none;
-	    letter-spacing: 5px;
-	    font-weight: bold;
-	    font-size: 20px;
-	}
-
-	#navBar {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-    #logo {
-        width: 500px;
-        padding-top: 30px;
-        }
-	body {
-		text-align: center;
-		font-family: 'Oswald', sans-serif;
-	}
-
-	header img {
-	    width: 250px;
-}
-
-	.form {
-		margin: 10px 0px;
-		padding:8px;
-		font-size: 20px;
-	}
-
-	.left {
-		float: left;
-	}
-
-	#whole {
-		margin-left: auto;
-		margin-right: auto;
-		padding: 10px;
-		text-align: center;
-	}
-
-	button {
-		padding: 10px 20px;
-		font-family: 'Oswald', sans-serif;
-		font-size: 20px;
-	}
-	#logo {
-		padding-top: 20px;
-		padding-bottom: 20px;
-		width: 50%;
-	}
-	#formSection {
-		width: 600px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-
-	}
-	.form {
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		}
-
-	.left {
-		float: left;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#whole {
-		margin-left: auto;
-		margin-right: auto;
-		padding: 10px;
-	}
-
-	#nameSection {
-
-		margin-right: auto;
-		margin-left: auto;
-	}
-	.clearfloat {
-		clear: both;
-	}
-	#emailid {
-		padding-top: 20px;
-	}
-	#nameid {
-		padding-top: 20px;
-	}
-
-	</style>
-
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="static/images/favicon_io/site.webmanifest">
 </head>
 
 
 <body>
 
-	<header>
-	    <img id="logo" src="../../static/images/logo.png" alt="revidalize logo">
-
-    </header>
 	<!-- NAV BAR -->
 	<nav>
 		<div id="navBar">
@@ -154,10 +28,10 @@
             <strong>
                 <nauv>
                     <u1 class="nav-links">
-                       <li ><a class="menuButton" href="home.html">Home</a></li>
-                        <li ><a class="menuButton" href="about.html">About</a></li>
-                        <li ><a class="menuButton" href="contact.html">Contact</a></li>
-						<li ><a class="menuButton" href="profile.html">Profile</a></li>
+                        <li><a href="{{ url_for('home')}}">Home</a></li>
+                        <li><a href="{{ url_for('about')}}">About</a></li>
+                        <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                        <li ><a href="{{ url_for('profile')}}">Profile</a></li>
 
                     </u1>
                 </nauv>
@@ -165,8 +39,11 @@
         </div>
     </nav>
     <!-- END OF NAV BAR -->
+	<header>
+	    <img id="logo" src="../../static/images/logo.png" alt="revidalize logo">
+    </header>
 
-	<form action="confirmation.html">
+	<form action="{{ url_for('confirmation')}}">
 		<div id="whole">
 
 			<div id="header">
@@ -219,4 +96,4 @@
 
 </body>
 </html>
-{% endblock %}
+<!-- {% endblock %} -->
