@@ -26,7 +26,9 @@ body{
 #background_box{
     background-color: #a0e4b1;
     width: 90vw;
-    height: 70vh;
+    height: 10vw;
+    font-size: 3vw;
+    margin-top: 8vh;
     border-radius: 10px;
     display: flex;
     justify-content: center;

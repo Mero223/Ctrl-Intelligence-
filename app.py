@@ -3,6 +3,7 @@ from select_story import select_story
 from select_nature import select_nature
 from select_create import select_create
 from select_cook import select_cook
+from select_random import select_random
 
 app = Flask(__name__)
 
@@ -52,7 +53,8 @@ def read():
 
 @app.route("/random")
 def random():  
-    return render_template("random.html")
+    random_choice = select_random()
+    return render_template("random.html", random=random_choice)
 
 if __name__ == '__main__':
     app.run(debug=True)
