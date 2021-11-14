@@ -24,15 +24,22 @@ body{
     font-size: 4vw;
 }
 
-#background_box{
+
+#vid_box{
     background-color: #C6E3F6;
-    width: 90vw;
-    height: 70vh;
+    width: 40vw;
+    height: 30vw;;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
+    margin-left: 3vw;
+    margin-right:3vw;
+    margin-bottom: 2vw;
 }
 
+#vid{
+    margin: 2vw;
+    width: 35vw;
+    height: 25vw;
+}
 
 /* nav bar */
 nav{
@@ -71,4 +78,9 @@ nav{
     letter-spacing: 5px;
     font-weight: bold;
     font-size: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+
 }
