@@ -11,11 +11,11 @@ nav{
     justify-content: space-around;
     align-content: center;
     min-height: 8vh;
-    background-color: bisque;
+    background-color: #a0e4b1;
     font-family: 'Oswald', sans-serif;
 }
 .logo{
-    color: chocolate;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
@@ -32,7 +32,7 @@ nav{
 }
 
 .nav-links a{
-    color: chocolate;
+    color: black;
     text-decoration: none;
     letter-spacing: 5px;
     font-weight: bold;
