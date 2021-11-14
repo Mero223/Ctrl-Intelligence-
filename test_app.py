@@ -5,6 +5,7 @@ to run enter "pytest test_app.py" in terminal"""
 from select_story import select_story, story_list
 from select_nature import select_nature, nature_list
 from select_create import select_create, create_list
+from select_cook import select_cook, cook_list
 
 def test_select_story_result_received():
     selected_story_title, selected_story = select_story()
@@ -25,3 +26,7 @@ def test_select_nature_result_received():
 def test_select_create_result_received():
     create_choice = select_create()
     assert create_choice in set(create_list)
+
+def test_select_cook_result_received():
+    cook_choice = select_cook()
+    assert cook_choice in set(cook_list)
