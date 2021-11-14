@@ -3,83 +3,17 @@
 <head>
 	<title> Confirmation | ReVidalize </title>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-	<style type="text/css">
-		/*NAV BAR*/
-	*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-	}
+	<link rel="stylesheet" href="static/css/confirmation.css">
 
-	nav{
-	    display: flex;
-	    justify-content: space-around;
-	    align-content: center;
-	    min-height: 8vh;
-	    background-color: bisque;
-	    font-family: 'Oswald', sans-serif;
-	}
-	.logo{
-	    color: chocolate;
-	    text-transform: uppercase;
-	    letter-spacing: 5px;
-	    font-size: 30px;
-	}
-	.nav-links{
-	    display: flex;
-	    justify-content: space-around;
-	    width: 100%;
-
-	}
-
-	.nav-links li{
-	    list-style: none;
-	}
-
-	.nav-links a{
-	    color: chocolate;
-	    text-decoration: none;
-	    letter-spacing: 5px;
-	    font-weight: bold;
-	    font-size: 20px;
-	}
-
-	#navBar {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-    #logo {
-        width: 500px;
-        padding-top: 30px;
-        }
-	body {
-		text-align: center;
-		font-family: 'Oswald', sans-serif;
-	}
-    #logo {
-		padding-top: 20px;
-		padding-bottom: 20px;
-		width: 50%;
-	}
-
-	header img {
-	    width: 250px;
-}
-
-	h1 {
-		font-size: 40px;
-		font-family: 'Oswald', sans-serif;
-		padding-left: 80px;
-		padding-right: 80px;
-		padding-top: 30px;
-	}
-
-	</style>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="static/images/favicon_io/site.webmanifest">
 </head>
 <body>
 	<header>
 	    <img id="logo" src="../../static/images/logo.png" alt="revidalize logo">
-
     </header>
 	<!-- NAV BAR -->
 	<nav>
@@ -88,10 +22,10 @@
             <strong>
                 <nauv>
                     <u1 class="nav-links">
-                        <li ><a class="menuButton" href="home.html">Home</a></li>
-                        <li ><a class="menuButton" href="about.html">About</a></li>
-                        <li ><a class="menuButton" href="contact.html">Contact</a></li>
-                        <li ><a class="menuButton" href="profile.html">Profile</a></li>
+                        <li><a href="{{ url_for('home')}}">Home</a></li>
+                        <li><a href="{{ url_for('about')}}">About</a></li>
+                        <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                        <li ><a href="{{ url_for('profile')}}">Profile</a></li>
 
                     </u1>
                 </nauv>
