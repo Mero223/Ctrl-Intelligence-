@@ -1,0 +1,174 @@
+
+body {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+/*NAV BAR*/
+*{
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 8vh;
+    background-color: #A1E4B1;
+    font-family: 'Oswald', sans-serif;
+}
+.logo{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#navBar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*BOTTOM CONTAINER*/
+
+#logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+#welcomeMessage {
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/*BUTTONS*/
+
+.clearfloat {
+    clear: both;
+    }
+
+.homeButtons {
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 40px;
+    font-color: black;
+    border: none;
+    color: black;
+    text-align:center;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+.clickButton{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#buttonContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+
+}
+
+#rowOne {
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleImage {
+    width: 40px;
+}
+
+#meditateButton {
+    background-color: #C6E3F6;
+    float: left;
+    margin-right: 40px;
+    margin-left:auto;
+    text-align: center;
+}
+
+#meditateButton:hover {
+    background-color: #8DBDDD;
+}
+
+#createButton {
+    background-color: #A1E4B1;
+    float: left;
+    margin-right: 40px;
+}
+
+#createButton:hover {
+    background-color: #71B882;
+}
+
+#cookButton {
+    background-color: #FAE1FF;
+    float: left;
+    margin-right: 40px;
+}
+
+#cookButton:hover {
+    background-color: #E3A9EF;
+}
+
+#natureButton {
+    background-color: #C6E3F6;
+    float: left;
+    margin-right: 40px;
+}
+
+#natureButton:hover {
+    background-color: #8DBDDD;
+}
+
+#readButton {
+    background-color: #A1E4B1;
+    float: left;
+}
+
+#readButton:hover {
+    background-color: #71B882;
+}
+
+#randomButton {
+    background-color: #FAE1FF;
+    float: left;
+}
+
+#randomButton:hover {
+    background-color: #E3A9EF;
+}
+
+
+#leafimg {
+    width: 25px;
+    padding-left: 5px;
+}
