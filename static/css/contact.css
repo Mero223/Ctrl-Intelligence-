@@ -1,0 +1,125 @@
+
+    /*NAV BAR*/
+*{
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 8vh;
+    background-color:#a0e4b1;
+    font-family: 'Oswald', sans-serif;
+}
+.logo{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#navBar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#logo {
+    width: 10vw;
+    padding-top: 30px;
+    }
+body {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+header img {
+    width: 250px;
+}
+
+.form {
+    margin: 10px 0px;
+    padding:8px;
+    font-size: 20px;
+}
+
+.left {
+    float: left;
+}
+
+#whole {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+#logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+#formSection {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+.left {
+    float: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#whole {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#nameSection {
+
+    margin-right: auto;
+    margin-left: auto;
+}
+.clearfloat {
+    clear: both;
+}
+#emailid {
+    padding-top: 20px;
+}
+#nameid {
+    padding-top: 20px;
+}
