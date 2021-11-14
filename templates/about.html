@@ -1,9 +1,222 @@
 {% extends "layout.html" %}
 {% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="meditate" content="Disconnect and Reconnect with ReVidalize">
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+	<title>About | ReVidalize</title>
 
-<div class="about">
-<h1>About page</h1>
-<h1>this is about page</h1>
-<p>this talks about the web app </p>
-</div>
+<style type="text/css">
+	/*NAV BAR*/
+	*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+	}
+
+	nav{
+	    display: flex;
+	    justify-content: space-around;
+	    align-content: center;
+	    min-height: 8vh;
+	    background-color: bisque;
+	    font-family: 'Oswald', sans-serif;
+	}
+	.logo{
+	    color: chocolate;
+	    text-transform: uppercase;
+	    letter-spacing: 5px;
+	    font-size: 30px;
+	}
+	.nav-links{
+	    display: flex;
+	    justify-content: space-around;
+	    width: 100%;
+
+	}
+
+	.nav-links li{
+	    list-style: none;
+	}
+
+	.nav-links a{
+	    color: chocolate;
+	    text-decoration: none;
+	    letter-spacing: 5px;
+	    font-weight: bold;
+	    font-size: 20px;
+	}
+
+	#navBar {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	body {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+	}
+	header {
+		font-size: 50px;
+		color: black;
+		background-color: #A1E4B1;
+		padding-bottom: 30px;
+		text-align:center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	header img {
+	    width: 250px;
+
+	}
+    .clearfloat {
+        clear:both;
+        }
+
+     #whoHead {
+     	font-size: 40px;
+     	float: left;
+     	width: 50%;
+     	padding-top: 30px;
+     }
+
+     #whoPara {
+     	font-size: 30px;
+     	float: left;
+     	width: 50%;
+     	text-align: justify;
+     	padding: 20px;
+     	background-color: #C6E3F6;
+     	border-radius: 20px;
+     }
+
+     #who {
+     	padding-top: 20px;
+     	padding-bottom: 20px;
+     	margin-left: auto;
+     	margin-right: auto;
+     	padding-left: 20px;
+     	padding-right: 20px;
+      }
+
+    #whyHead {
+     	font-size: 40px;
+     	float: left;
+     	width: 50%;
+     	padding-top: 60px;
+     }
+
+    #whyPara {
+     	font-size: 30px;
+     	float: left;
+     	width: 50%;
+     	text-align: justify;
+     	padding-top: 30px;
+     	background-color: #FAE1FF;
+     	padding: 20px;
+     	border-radius: 20px;
+     }
+
+    #why {
+     	padding-top: 20px;
+     	padding-bottom: 20px;
+     	margin-left: auto;
+     	margin-right: auto;
+     	padding-left: 20px;
+     	padding-right: 20px;
+      }
+
+    #whatHead {
+     	font-size: 40px;
+     	float: left;
+     	width: 50%;
+     	padding-top: 100px;
+     	padding-right: 30px;
+     }
+
+    #whatPara {
+     	font-size: 30px;
+     	float: left;
+     	width: 50%;
+     	text-align: justify;
+     	padding-top: 30px;
+     	background-color:#A1E4B1;
+     	padding: 20px;
+     	border-radius: 20px;
+     }
+
+    #what {
+     	padding-top: 20px;
+     	padding-bottom: 20px;
+     	margin-left: auto;
+     	margin-right: auto;
+     	padding-left: 20px;
+     	padding-right: 20px;
+      }
+
+</style>
+</head>
+<body>
+     <header>
+	    <h1>About Us</h1>
+	    <img id="logo" src="../../static/images/logo.png" alt="revidalize logo">
+
+    </header>
+	<!-- NAV BAR -->
+	<nav>
+		<div id="navBar">
+            <a class="logo">GET READY TO REVIDALIZE</a>
+            <strong>
+                <nauv>
+                    <u1 class="nav-links">
+                      <li ><a class="menuButton" href="home.html">Home</a></li>
+                        <li ><a class="menuButton" href="about.html">About</a></li>
+                        <li ><a class="menuButton" href="contact.html">Contact</a></li>
+
+                    </u1>
+                </nauv>
+            </strong>
+        </div>
+    </nav>
+    <!-- END OF NAV BAR -->
+
+    <div class="section">
+        <div id="who">
+            <div id="whoHead">
+            	<h1>Who we are</h1>
+            </div>
+            <div id="whoPara">
+            	<p>Made by students, ReVidalize is a website aiming to help people <em>disconnect</em> from their phone and <em>reconnect</em> with themselves. Also as victims of screen fatigue from working from home, we wanted to find a way to encourage getting away from the screen. That is how ReVidalize was created.</p>
+            </div>
+           	<div class="clearfloat"></div>
+        </div>
+
+        <div id="why">
+            <div id="whyPara">
+            	<p>Though there are many applications out there that will press users to limit scren time, there is a gap in telling <em>what</em> users to do during that off-screen time. ReVidalize is an app that not only limits screen time, but also helps users find activities to do to reconnect with themselves.</p>
+            </div>
+            <div id="whyHead">
+            	<h1>Why ReVidalize?</h1>
+            </div>
+           	<div class="clearfloat"></div>
+        </div>
+
+    </div>
+
+     <div class="section">
+        <div id="what">
+            <div id="whatHead">
+            	<h1>What is ReVidalize?</h1>
+            </div>
+            <div id="whatPara">
+            	<p>ReVidalize is a website that gives you options to reconnect with yourself through different outlets. Maybe you'd like to clear your mind through meditation, learn a new recipe, read some short stories, stimulate your creativity through our creative prompts, or enjoy nature outside. Don't know what you want to do? ReVidalize will give you a random activity to do if you choose the "random" option. The possibilites are endless for you to reconnect with yourself.</p>
+            </div>
+           	<div class="clearfloat"></div>
+        </div>
+    </div>
+
+</body>
+</html>
 {% endblock %}

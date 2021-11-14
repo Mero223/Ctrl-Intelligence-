@@ -1,9 +1,234 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<div class="home">
-<h1>Contact page</h1>
-<h1>This page is to get in contact with us</h1>
-<p>by number or email</p>
-</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Contact Us | ReVidalize </title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+	<style type="text/css">
+		/*NAV BAR*/
+	*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+	}
+
+	nav{
+	    display: flex;
+	    justify-content: space-around;
+	    align-content: center;
+	    min-height: 8vh;
+	    background-color: bisque;
+	    font-family: 'Oswald', sans-serif;
+	}
+	.logo{
+	    color: chocolate;
+	    text-transform: uppercase;
+	    letter-spacing: 5px;
+	    font-size: 30px;
+	}
+	.nav-links{
+	    display: flex;
+	    justify-content: space-around;
+	    width: 100%;
+
+	}
+
+	.nav-links li{
+	    list-style: none;
+	}
+
+	.nav-links a{
+	    color: chocolate;
+	    text-decoration: none;
+	    letter-spacing: 5px;
+	    font-weight: bold;
+	    font-size: 20px;
+	}
+
+	#navBar {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+    #logo {
+        width: 500px;
+        padding-top: 30px;
+        }
+	body {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+	}
+	header {
+		font-size: 50px;
+		color: black;
+		background-color: #A1E4B1;
+		padding-bottom: 30px;
+		text-align:center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	header img {
+	    width: 250px;
+}
+
+	.form {
+		margin: 10px 0px;
+		padding:8px;
+		font-size: 20px;
+	}
+
+	.left {
+		float: left;
+	}
+
+	#whole {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+		text-align: center;
+	}
+
+	button {
+		padding: 10px 20px;
+		font-family: 'Oswald', sans-serif;
+		font-size: 20px;
+	}
+
+	#header {
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 30px;
+		padding-top: 40px;
+		font-size: 50px;
+	}
+	#formSection {
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+	}
+	.form {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		}
+
+	.left {
+		float: left;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#whole {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+	}
+
+	#nameSection {
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.clearfloat {
+		clear: both;
+	}
+	#emailid {
+		padding-top: 20px;
+	}
+	#nameid {
+		padding-top: 20px;
+	}
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<header>
+	    <img id="logo" src="../../static/images/logo.png" alt="revidalize logo">
+
+    </header>
+	<!-- NAV BAR -->
+	<nav>
+		<div id="navBar">
+            <a class="logo">GET READY TO REVIDALIZE</a>
+            <strong>
+                <nauv>
+                    <u1 class="nav-links">
+                       <li ><a class="menuButton" href="home.html">Home</a></li>
+                        <li ><a class="menuButton" href="about.html">About</a></li>
+                        <li ><a class="menuButton" href="contact.html">Contact</a></li>
+
+                    </u1>
+                </nauv>
+            </strong>
+        </div>
+    </nav>
+    <!-- END OF NAV BAR -->
+
+	<form action="confirmation.html">
+		<div id="whole">
+
+			<div id="header">
+				<h1>Contact Us: </h1>
+			</div> <!--end of #header-->
+
+			<div id="formSection">
+				<div id="nameSection" class="form">
+
+					<div id="name" class="left">
+						<label for="nameid" style="font-size: 40px">Name:</label>
+					</div>
+
+					<div id="nameid" class="left">
+						<input class="left" type="text" style="height: 30px; margin-left: 20px;width: 200px; margin-left: 20px; font-family:'Oswald', sans-serif;" placeholder="Name">
+					</div>
+				</div> <!-- end of #name -->
+
+				<div class="clearfloat"></div>
+
+				<div id="emailSection" class="form">
+
+					<div class="left" id="email" >
+						<label for="emailid" style="font-size: 40px">Email:</label>
+					</div>
+
+					<div id="emailid" class="left">
+						<input class="left"  type="text" style="height: 30px; width: 200px; margin-left: 20px; font-family:'Oswald', sans-serif;" placeholder="yourname@email.com">
+					</div>
+				</div> <!-- end of #email -->
+
+				<div class="clearfloat"></div>
+
+				<div id="messageform" class="form">
+					<div class="form">
+						<label for="message" style="font-size: 30px">Please type your message below, and our team will get back to you as soon as possible!</label>
+					</div>
+
+						<textarea id="message" placeholder="  Your message" style="height:200px; width:400px; padding-left: 10px; font-family: 'Oswald', sans-serif; font-size: 18px"></textarea>
+				</div><!-- end of #messageform-->
+
+				<div class="form">
+					<button type="submit">Submit</button>
+					<button type="reset">Clear</button>
+				</div>
+			</div>
+
+		</div> <!-- end of #whole-->
+	</form>
+
+</body>
+</html>
 {% endblock %}
