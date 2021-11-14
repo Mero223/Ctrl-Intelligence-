@@ -3,8 +3,9 @@
 to run enter "pytest test_app.py" in terminal"""
 
 from select_story import select_story
+from select_nature import select_nature
 from select_story import story_list
-
+from select_nature import nature_list
 
 def test_select_story_result_received():
     selected_story_title, selected_story = select_story()
@@ -17,3 +18,7 @@ def test_select_story_story_and_author_aligned():
     titles = list(story_list.keys())
     assert len(stories) == len(titles)
     assert titles.index(selected_story_title) == stories.index(selected_story)
+
+def test_select_nature_result_received():
+    walk = select_nature()
+    assert walk in set(nature_list)
