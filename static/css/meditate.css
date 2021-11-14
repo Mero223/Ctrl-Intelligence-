@@ -30,7 +30,7 @@ body{
     height: 70vh;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+
 }
 
 
@@ -71,4 +71,9 @@ nav{
     letter-spacing: 5px;
     font-weight: bold;
     font-size: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+
 }
