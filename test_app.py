@@ -2,10 +2,9 @@
 
 to run enter "pytest test_app.py" in terminal"""
 
-from select_story import select_story
-from select_nature import select_nature
-from select_story import story_list
-from select_nature import nature_list
+from select_story import select_story, story_list
+from select_nature import select_nature, nature_list
+from select_create import select_create, create_list
 
 def test_select_story_result_received():
     selected_story_title, selected_story = select_story()
@@ -22,3 +21,7 @@ def test_select_story_story_and_author_aligned():
 def test_select_nature_result_received():
     walk = select_nature()
     assert walk in set(nature_list)
+
+def test_select_create_result_received():
+    create_choice = select_create()
+    assert create_choice in set(create_list)

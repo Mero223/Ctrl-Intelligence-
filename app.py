@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for
 from select_story import select_story
 from select_nature import select_nature
+from select_create import select_create
 
 app = Flask(__name__)
 
@@ -31,7 +32,8 @@ def nature():  # put application's code here
 
 @app.route("/create")
 def create():  # put application's code here
-    return render_template("create.html")
+    creative_activity = select_create()
+    return render_template("create.html", activity=creative_activity)
 
 @app.route("/cook")
 def cook():  # put application's code here
