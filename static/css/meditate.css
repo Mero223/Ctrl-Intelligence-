@@ -24,15 +24,22 @@ body{
     font-size: 4vw;
 }
 
-#background_box{
-    background-color: #C6E3F6;
-    width: 90vw;
-    height: 70vh;
-    border-radius: 10px;
-    display: flex;
 
+#vid_box{
+    background-color: #C6E3F6;
+    width: 40vw;
+    height: 30vw;;
+    border-radius: 10px;
+    margin-left: 3vw;
+    margin-right:3vw;
+    margin-bottom: 2vw;
 }
 
+#vid{
+    margin: 2vw;
+    width: 35vw;
+    height: 25vw;
+}
 
 /* nav bar */
 nav{
