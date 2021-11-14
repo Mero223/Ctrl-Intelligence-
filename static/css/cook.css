@@ -26,7 +26,9 @@ body{
 #background_box{
     background-color: #C6E3F6;
     width: 90vw;
-    height: 70vh;
+    height: 10vw;
+    font-size: 3vw;
+    margin-top: 8vh;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -38,7 +40,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-content: center;
-    min-height: 8vh;
+    min-height: 6vh;
     background-color: #C6E3F6;
     font-family: 'Oswald', sans-serif;
     width: 100vw;
@@ -72,3 +74,60 @@ nav{
     font-size: 20px;
 }
 
+
+
+/* cook  */
+
+#buttonContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+
+}
+
+.row {
+    padding-top: 2vw;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titleImage {
+    width: 4vw;
+}
+
+#foodText{
+    font-size: 2.5vw;
+}
+
+#recipeButton {
+    background-color: #C6E3F6;
+    border-radius: 1vw;
+    float: left;
+    font-size: 3vw;
+    width: 28vw;
+    margin-right: 2vw;
+    margin-left:2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#foodPhoto{
+    width: 20vw;
+    height: 20vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+#recipeButton:hover {
+    background-color: #8DBDDD;
+}
