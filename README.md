@@ -4,7 +4,7 @@
 - Rahmot Afolabi
 - Eve Nicole
 - Joanna Park
-- Nicholas Smith
+
 
 --------------------------------------------
 
